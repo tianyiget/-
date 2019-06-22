@@ -360,7 +360,7 @@ namespace ECAN
             }
 
             connect |= can; //我已连接
-            //Thread.Sleep(800); //给初始化准备一点时间.
+            Thread.Sleep(200); //给初始化准备一点时间.
             timer.Start();    //直接开始
             isRunning = true;
             return true;
